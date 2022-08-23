@@ -1,0 +1,63 @@
+.header {
+  background-image: url("/assets/img/headerimg.jpg");
+  background-color: black;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50vh;
+
+  .logo-img {
+    margin: 20px 0;
+    width: 35%;
+
+    &.mobile {
+      margin: 0;
+      padding: 20px 0;
+    }
+  }
+
+  .desc-desktop {
+    background: transparent;
+  }
+
+  .epigrafe {
+    small {
+      max-width: 45vw;
+      position: absolute;
+      bottom: 20px;
+      color: rgba(255, 255, 255, 0.55);
+      right: 20px;
+    }
+  }
+}
+
+.description {
+  .title {
+    font-size: 55px;
+    line-height: 50px;
+  }
+
+  .content-list {
+    padding: 0;
+    list-style: none;
+    display: block;
+    counter-reset: my-counter;
+    max-width: 100%;
+
+    li {
+      background-color: #f2f2f2;
+      width: max-content;
+      margin: 5px 0;
+      padding: 0 5px;
+      word-wrap: break-word;
+      word-break: break-all;
+      max-width: 100%;
+      counter-increment: my-counter;
+      border-radius: 4px;
+      &::before {
+        content: counter(my-counter) ". ";
+        background-color: #f2f2f2;
+      }
+    }
+  }
+}

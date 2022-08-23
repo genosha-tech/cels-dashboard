@@ -1,0 +1,276 @@
+@media (min-width: 500px) {
+  .header {
+    img {
+      margin: 30px 20px;
+      width: initial;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 100vh;
+
+    .logo-img {
+      max-width: 135px;
+      width: auto;
+      margin: 10px 0;
+    }
+
+    .content-list {
+      li {
+        background-color: #cccccc;
+        font-size: 16px;
+        border-radius: 4px;
+
+        &::before {
+          background-color: #cccccc;
+        }
+      }
+    }
+
+    .redes {
+      ul {
+        bottom: 0;
+      }
+    }
+
+    .description {
+      .title {
+        font-size: 65px;
+        line-height: 56px;
+        color: white;
+      }
+
+      p {
+        color: white;
+        font-size: 18px;
+        margin-bottom: 5px;
+        line-height: 24px;
+      }
+    }
+
+    .arrow {
+      img {
+        position: absolute;
+        left: 75%;
+        transform: translateX(-75%);
+        bottom: 55px;
+      }
+    }
+  }
+  .historias {
+    .overlay {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+@media (min-width: 1366px) and (max-height: 600px) {
+  .header {
+    .description {
+      .title {
+        font-size: 56px;
+        line-height: 46px;
+      }
+
+      p {
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-height: 590px) {
+  section.header {
+    display: block !important;
+  }
+
+  img.logo-img {
+    display: block !important;
+    width: auto !important;
+    padding: 20px;
+  }
+
+  .description.desc-desktop {
+    display: none !important;
+  }
+
+  .container.mt-3.description {
+    display: block !important;
+  }
+
+  .arrow {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1020px;
+  }
+}
+
+@media (min-width: 992px) {
+  .fullwidth-img {
+    .epigrafe {
+      position: absolute;
+      max-width: 60%;
+    }
+  }
+
+  .section-title {
+    font-size: 60px;
+    letter-spacing: -2px;
+  }
+
+  .info {
+    font-size: 20px;
+  }
+
+  .block-title {
+    font-size: 29px;
+  }
+
+  .red-title {
+    font-size: 35px;
+  }
+
+  .historias {
+    .overlay {
+      width: 325px;
+      height: 325px;
+    }
+  }
+
+  .search {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1400px) and  (max-height: 900px) {
+  .header {
+    .description {
+      .title {
+        font-size: 90px;
+        line-height: 85px;
+      }
+
+      p {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) and (min-height: 900px) {
+  .header {
+    .content-list {
+      li {
+        font-size: 22px;
+      }
+    }
+
+    .description {
+      .title {
+        font-size: 90px;
+        line-height: 80px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .historias {
+    .overlay {
+      width: 365px;
+      height: 365px;
+    }
+  }
+}
+
+@media (min-width: 1768px) {
+  .historias,
+  .rtas-desp,
+  .armas-letales,
+  .datos-est,
+  .custodia,
+  .fuera-servicio {
+    .fullwidth-img {
+      max-width: 1140px;
+      height: 750px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 1000px) and (min-height: 900px) {
+  .header {
+    .logo-img {
+      max-width: 100%;
+    }
+
+    .description {
+      .title {
+        font-size: 110px;
+        line-height: 100px;
+        margin-top: 25px;
+      }
+
+      p {
+        margin-top: 30px !important;
+      }
+
+      .content-list {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .historias {
+      .overlay {
+        width: 310px;
+        height: 310px;
+      }
+    }
+}
+
+@media (min-width: 1025px) {
+  .chart {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1900px) {
+  .header {
+    .content-list {
+      li {
+        font-size: 27px;
+      }
+    }
+
+    .description {
+      .title {
+        font-size: 90px;
+        line-height: 80px;
+      }
+
+      p {
+        font-size: 27px;
+        line-height: initial;
+      }
+    }
+  }
+}

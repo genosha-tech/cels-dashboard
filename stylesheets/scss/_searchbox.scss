@@ -1,0 +1,38 @@
+.search-item {
+  width: 50px;
+  height: 45px;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+
+  &.open {
+    width: 250px;
+    background-color: white;
+    height: 45px;
+  }
+}
+
+.search-box {
+  height: 40px;
+  width: 90%;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+  padding: 0 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &:focus {
+    outline: none;
+  }
+}
+
+.search-button {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}

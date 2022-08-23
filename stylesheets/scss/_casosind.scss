@@ -1,0 +1,174 @@
+.caso {
+  margin-top: 44px;
+
+  button.btn.btn-sm {
+    background-color: transparent;
+    border: none;
+    color: #808080;
+  }
+
+  .special-left-arrow {
+    max-width: 45px;
+  }
+
+  .left-arrow {
+    max-width: 29px;
+  }
+
+  .right-arrow {
+    height: 37px !important;
+    max-width: 29px;
+    transform: rotate(180deg);
+  }
+
+  .contenido {
+    border-bottom: 1px solid #808080;
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  
+  .san-miguel {
+    h1 {
+      font-size: 4.5rem;
+    }
+
+    span {
+      font-size: 1.5rem;
+    }
+  }
+
+  .contenido-desktop {
+    h2 {
+      font-size: 4.2rem;
+    }
+
+    span {
+      display: flex;
+      height: 100%;
+      font-size: 1.2rem;
+    }
+
+    .foto-historia {
+      .text-form {
+        shape-image-threshold: 0.5;
+        shape-margin: 40px;
+        float: left;
+        width: 25%;
+      }
+    }
+  }
+}
+
+svg {
+  transition: fill 1s ease;
+  cursor: pointer;
+}
+
+.c3-chart-text text 
+{
+    font-size: 18px; //change the size of the fonts
+}
+
+.c3-chart-text text 
+{
+    font-size: 18px; //change the size of the fonts
+}
+
+/*.container{
+  max-width: 100%;
+  overflow-y: hidden;
+}
+*/.chart{  
+    max-width: 100%;
+    overflow: scroll;
+}
+#chart.c3, #civiles-inst-chart.c3, #funcionarios-map-graph, #funcionarios-in-chart.c3 {
+    width: 300vw;
+  }
+
+  #civiles-map-graph {
+    width: 100%;
+    max-width: 100%;
+  }
+@media only screen and (min-width: 1024px){
+ /* .container{
+  max-width: auto;
+  overflow-y: auto;
+}*/
+  #chart.c3, #civiles-inst-chart.c3, #funcionarios-in-chart.c3 {
+    width: 100%;
+  }
+}
+
+
+
+
+
+.pure-material-progress-linear {
+      width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    height: 0.25em;
+    color: #e22929;
+    background-color: rgba(33, 150, 243, 0.12);
+    font-size: 16px;
+}
+
+.pure-material-progress-linear::-webkit-progress-bar {
+    background-color: transparent;
+}
+
+/* Determinate */
+.pure-material-progress-linear::-webkit-progress-value {
+    background-color: currentColor;
+    transition: all 0.2s;
+}
+
+.pure-material-progress-linear::-moz-progress-bar {
+    background-color: currentColor;
+    transition: all 0.2s;
+}
+
+.pure-material-progress-linear::-ms-fill {
+    border: none;
+    background-color: currentColor;
+    transition: all 0.2s;
+}
+
+/* Indeterminate */
+.pure-material-progress-linear:indeterminate {
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, transparent 50%, currentColor 50%, currentColor 60%, transparent 60%, transparent 71.5%, currentColor 71.5%, currentColor 84%, transparent 84%);
+    animation: pure-material-progress-linear 2s infinite linear;
+}
+
+.pure-material-progress-linear:indeterminate::-moz-progress-bar {
+    background-color: transparent;
+}
+
+.pure-material-progress-linear:indeterminate::-ms-fill {
+    animation-name: none;
+}
+
+@keyframes pure-material-progress-linear {
+    0% {
+        background-size: 200% 100%;
+        background-position: left -31.25% top 0%;
+    }
+    50% {
+        background-size: 800% 100%;
+        background-position: left -49% top 0%;
+    }
+    100% {
+        background-size: 400% 100%;
+        background-position: left -102% top 0%;
+    }
+}
+
+#funcionarios-in-chart svg g.c3-axis-x .tick , #civiles-inst-chart svg g.c3-axis-x .tick {
+   display: none;
+}
