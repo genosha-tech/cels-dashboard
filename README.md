@@ -4,7 +4,8 @@ Violencia policial es una plataforma que reúne datos actualizados sobre lesione
 
 ## Setup
 Para ejecutar la plataforma, solo basta con realizar una ejecucion de php server en local.
-$ php -S localhost:8000
+
+	php -S localhost:8000
 
 Luego, con abrir una web en http://localhost:8000 funcionará todo :-)
 
