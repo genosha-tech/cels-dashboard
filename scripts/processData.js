@@ -50,9 +50,9 @@ self.addEventListener('message', function(e) {
               .key(function(d) { return d.template; })
               .entries(mainData);
            
-           var victimasTemplateId = "5f4ec76e352379635d7a73a3";
-           var hechosTemplateId = "5f4ec909352379635d7a7cba";
-           var funcionariosTemplateId = "5f4ec83d352379635d7a7a0f";
+           var victimasTemplateId = "603d566f5ba260d73a93c013";
+           var hechosTemplateId = "5bfbb1a0471dd0fc16ada146";
+           var funcionariosTemplateId = "603d58835ba260d73a94344e";
            //Claisifcacion
            medData.victimas = entities.filter(function(x) { return x.key === victimasTemplateId })[0].values;
            medData.funcionarios = entities.filter(function(x) { return x.key === funcionariosTemplateId })[0].values;
@@ -215,7 +215,9 @@ self.addEventListener('message', function(e) {
 
            
 
-           medData.institucion = medData.hechos.map(function(v){   return v.metadata.institucion[0]});
+           medData.institucion = medData.hechos.filter(function(v){
+             return v.metadata.institucion;
+           }).map(function(v){   return v.metadata.institucion[0]});
            medData.provincias = medData.hechos.map(function(v){   return v.metadata.provincia[0]});
            medData.genero = medData.victimas.map(function(v){ 
              return (!v || !v.metadata) ? {label:""} : v.metadata.genero[0]});

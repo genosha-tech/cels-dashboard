@@ -128,7 +128,12 @@ angular
             //Agrupamiento de hechos x Año
            medService.hechosInstitucion = d3.nest()
               .key(function(d) { 
-                return d.metadata.institucion[0].label; 
+                var inst = "(Sin Datos)"
+                if (d.metadata.institucion){
+                  inst = d.metadata.institucion[0].label;
+                }
+                
+                return inst;
               })
               .entries(h);
            
